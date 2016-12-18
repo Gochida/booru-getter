@@ -1,12 +1,13 @@
 {
   "name": "booru-getter",
   "version": "0.0.1",
-  "description": "Module for retrieving images from Safebooru (\u0016\u0016https://safebooru.org)",
+  "description": "Module for retrieving images from Safebooru and Gelbooru",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository":"https://github.com/Gochida/booru-getter.git",
+  "author": "Yobi Gochida",
   "license": "MIT",
   "dependencies": {
     "request": "^2.79.0",
