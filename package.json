@@ -1,0 +1,16 @@
+{
+  "name": "booru-getter",
+  "version": "0.0.1",
+  "description": "Module for retrieving images from Safebooru (\u0016\u0016https://safebooru.org)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.79.0",
+    "superagent": "^3.3.1",
+    "xml2js": "^0.4.17"
+  }
+}
