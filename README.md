@@ -1,9 +1,9 @@
-## Booru-Getter
-##A Node.js module for retrieving search information or image urls from Safebooru and Gelbooru
+# Booru-Getter
+### A Node.js module for retrieving search information or image urls from Safebooru and Gelbooru
 
-##Usage
+### Usage
 
-###Safebooru
+##### Safebooru
 [A worksafe booru.](https://safebooru.org/) 
 
 ```js
@@ -25,7 +25,7 @@ getter.getRandom("blue_hair+red_shirt+-dress*", (err, url)=>{
 }
 ```
 
-###Gelbooru
+#### Gelbooru
 [A booru that contains NSFW images.](http://gelbooru.com/)
 
 ```js
