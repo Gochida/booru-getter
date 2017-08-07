@@ -54,9 +54,13 @@ exports.getRandom = function(tags, callback){
 							console.log("Error", err);
 						else {
 							console.log(result.posts);
-							var output = result.posts.post[0].$.file_url;//.replace("//","");
+                            try{
+                                var output = result.posts.post[0].$.file_url;//.replace("//","");
+							callback(undefined,"http:"+output);	
 							// callback("http://"+output);	
-							callback("http:"+output);	
+                            }catch(err){
+                                callback(err,undefined)
+                            }
 						}
 					});
 				});		
@@ -87,9 +91,14 @@ exports.getRandomLewd = function(tags, callback)
 							console.log("Error", err);
 						else {
 							console.log(result.posts);
+                             try{
+                                
 							var output = result.posts.post[0].$.file_url;//.replace("//","");
 							// callback("http://"+output);	
-							callback(output);//.replace("http:", "http://"));	
+							callback(undefined,output);//.replace("http:", "http://"));	
+                                }catch(err){
+                                    callback(err,undefined)
+                                }
 						}
 					});
 				});		
